@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="w6N-DI-dCE" userLabel="MainView" customClass="LoaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eB1-01-UFf">
+                    <rect key="frame" x="30" y="32" width="20" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3aT-T0-EF7"/>
+                        <constraint firstAttribute="width" constant="20" id="JA2-UG-bFT"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eB1-01-UFf" firstAttribute="top" secondItem="w6N-DI-dCE" secondAttribute="top" constant="32" id="9Br-8S-eI9"/>
+                <constraint firstItem="eB1-01-UFf" firstAttribute="leading" secondItem="w6N-DI-dCE" secondAttribute="leading" constant="30" id="yZp-l0-q5U"/>
+            </constraints>
+            <connections>
+                <outlet property="activity" destination="eB1-01-UFf" id="jvr-Oq-Atw"/>
+                <outlet property="leftConstraint" destination="yZp-l0-q5U" id="zxt-3h-RlY"/>
+                <outlet property="topConstraint" destination="9Br-8S-eI9" id="XAg-nC-oqN"/>
+            </connections>
+            <point key="canvasLocation" x="434" y="397"/>
+        </view>
+    </objects>
+</document>
